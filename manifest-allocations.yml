@@ -4,7 +4,8 @@ applications:
   host: allocations-pal-rwl
   memory: 1G
   instances: 1
-  env:
-    REGISTRATION_SERVER_ENDPOINT: https://registration-pal-rwl.apps.longs.pal.pivotal.io
+#  env:
+#    REGISTRATION_SERVER_ENDPOINT: https://registration-pal-rwl.apps.longs.pal.pivotal.io
   services:
   - tracker-allocations-database
+  - tracker-service-registry
