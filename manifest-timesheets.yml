@@ -2,6 +2,8 @@ applications:
 - name: tracker-timesheets
   path: ./applications/timesheets-server/build/libs/timesheets-server.jar
   host: timesheets-pal-rwl
+  stack: cflinuxfs2
+  buildpack: java_buildpack_offline
   memory: 1G
   instances: 1
   env:

@@ -2,6 +2,8 @@ applications:
 - name: tracker-backlog
   path: ./applications/backlog-server/build/libs/backlog-server.jar
   host: backlog-pal-rwl
+  stack: cflinuxfs2
+  buildpack: java_buildpack_offline
   memory: 1G
   instances: 1
   env:
